@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+			<div class="head">
+			<div class="first">
+			<h2>Sorting & Searching<br>Visualizer</h2>
+		</div>
+            <div class="array-inputs">
+                <p>Enter the size of the array(5-150):</p>
+                <input type="number" id="a_size"  min="5" max="150">
+                <p>Enter the speed of the algorithm(1-5):</p>
+                <input type="number" id="a_speed"  min="1" max="5">
+                <button id="a_generate">Generate New Array!</button>
+                 <a href="index.html" class="reset">Reset</a>
+            </div>
+            <div class="legend">Sorting algorithms legend
+            <div class="rectangle-y"><p>Comparing Element</p></div>
+            <div class="rectangle-r"><p>Elements getting swapped</p></div>
+            <div class="rectangle-g"><p>Sorted Element</div>
+        </div>
+    </div>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <h1>Sorting Algorithms</h1>
+             <div class="algos">
+                    <button >Bubble</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                    <button >Heap</button>
+                    <button >Selection</button>
+                    <input type="text" id="key"placeholder="Enter the search key">
+                    <button>Linear</button>
+                     <button>Binary</button>
+                </div>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <h1>Run time</h1>
+            <div class="run">
+             <label for="displayValue">Average Case:</label><input type="text" id="avg">
+             <label for="displayValue">Worst Case:</label><input type="text" id="wor">
+             <label for="displayValue">Best Case:</label><input type="text" id="best">
+            
+        	</div>
+    	</div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="bubble_sort.js"></script>
+    <script src="selection_sort.js"></script>
+    <script src="insertion_sort.js"></script>
+    <script src="merge_sort.js"></script>
+    <script src="quick_sort.js"></script>
+    <script src="heap_sort.js"></script>
+  	<script src="linear.js"></script>
+  	<script src="binary.js"></script>
+</body>
+
+
+
+</html>
